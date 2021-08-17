@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+echo "CONNECTING TO CAMERA ONE"
+nmcli con up "SCP CAM 1"
+curl http://10.5.5.9/gp/gpControl/command/mode?p=0
+curl http://10.5.5.9/gp/gpControl/setting/2/4
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=1 
+echo "CONNECTING TO CAMERA TWO"
+nmcli con up "SCP CAM 2"
+curl http://10.5.5.9/gp/gpControl/command/mode?p=0
+curl http://10.5.5.9/gp/gpControl/setting/2/4
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=1 
+echo "CONNECTING TO CAMERA THREE"
+nmcli con up "SCP CAM 3"
+curl http://10.5.5.9/gp/gpControl/command/mode?p=0
+curl http://10.5.5.9/gp/gpControl/setting/2/4
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=1 
+echo "CONNECTING TO CAMERA FOUR"
+nmcli con up "SCP CAM 4"
+curl http://10.5.5.9/gp/gpControl/command/mode?p=0
+curl http://10.5.5.9/gp/gpControl/setting/2/4
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=1 

@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+nmcli con up "SCP CAM 1"
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=0
+nmcli con up "SCP CAM 2"
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=0
+nmcli con up "SCP CAM 3"
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=0
+nmcli con up "SCP CAM 4"
+curl http://10.5.5.9/gp/gpControl/command/shutter?p=0
